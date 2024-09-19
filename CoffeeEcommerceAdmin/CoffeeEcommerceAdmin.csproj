@@ -46,10 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormDashboard.cs">
+    <Compile Include="Form\FormDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormDashboard.Designer.cs">
+    <Compile Include="Form\FormDashboard.Designer.cs">
       <DependentUpon>FormDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLayout.cs">
@@ -58,21 +58,21 @@
     <Compile Include="FormLayout.Designer.cs">
       <DependentUpon>FormLayout.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormProduct.cs">
+    <Compile Include="Form\Product\FormProduct.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormProduct.Designer.cs">
+    <Compile Include="Form\Product\FormProduct.Designer.cs">
       <DependentUpon>FormProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormDashboard.resx">
+    <EmbeddedResource Include="Form\FormDashboard.resx">
       <DependentUpon>FormDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLayout.resx">
       <DependentUpon>FormLayout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormProduct.resx">
+    <EmbeddedResource Include="Form\Product\FormProduct.resx">
       <DependentUpon>FormProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
