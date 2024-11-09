@@ -31,12 +31,12 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button_nav_product = new System.Windows.Forms.Button();
             this.button_nav_dashboard = new System.Windows.Forms.Button();
             this.panel_main = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -86,6 +86,20 @@
             this.button4.TabIndex = 1;
             this.button4.Text = "Đăng xuất";
             this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button1.Image = global::CoffeeEcommerceAdmin.Properties.Resources.icons8_users_24;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(25, 301);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(162, 60);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Khách hàng";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
@@ -150,20 +164,6 @@
             this.panel_main.Name = "panel_main";
             this.panel_main.Size = new System.Drawing.Size(979, 570);
             this.panel_main.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.Image = global::CoffeeEcommerceAdmin.Properties.Resources.icons8_users_24;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(25, 301);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 60);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Khách hàng";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // FormLayout
             // 

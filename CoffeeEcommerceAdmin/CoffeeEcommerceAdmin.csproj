@@ -47,6 +47,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UCCategory">
+      <HintPath>..\..\CoffeeEcommerceLib\UCCategory\obj\Debug\UCCategory.dll</HintPath>
+    </Reference>
     <Reference Include="UCLogin">
       <HintPath>..\..\CoffeeEcommerceLib\UCLogin\obj\Debug\UCLogin.dll</HintPath>
     </Reference>
@@ -58,10 +61,16 @@
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\FormDashboard.cs">
+    <Compile Include="_Form\Category\FormCategory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FormDashboard.Designer.cs">
+    <Compile Include="_Form\Category\FormCategory.Designer.cs">
+      <DependentUpon>FormCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_Form\FormDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Form\FormDashboard.Designer.cs">
       <DependentUpon>FormDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLayout.cs">
@@ -70,10 +79,10 @@
     <Compile Include="FormLayout.Designer.cs">
       <DependentUpon>FormLayout.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\Product\FormProduct.cs">
+    <Compile Include="_Form\Product\FormProduct.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\Product\FormProduct.Designer.cs">
+    <Compile Include="_Form\Product\FormProduct.Designer.cs">
       <DependentUpon>FormProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -81,13 +90,16 @@
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FormDashboard.resx">
+    <EmbeddedResource Include="_Form\Category\FormCategory.resx">
+      <DependentUpon>FormCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Form\FormDashboard.resx">
       <DependentUpon>FormDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLayout.resx">
       <DependentUpon>FormLayout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\Product\FormProduct.resx">
+    <EmbeddedResource Include="_Form\Product\FormProduct.resx">
       <DependentUpon>FormProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

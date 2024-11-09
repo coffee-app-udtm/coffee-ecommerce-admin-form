@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoffeeEcommerceAdmin._Form.Product;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,13 +14,23 @@ namespace CoffeeEcommerceAdmin
     public partial class FormLayout : Form
     {
         private List<Button> navButtons;
-        public FormLayout()
+        public FormLayout(Form form)
         {
             InitializeComponent();
 
             initNavButtons();
             setActiveButton(button_nav_dashboard);
-            loadForm(new FormDashboard());
+            //loadForm(new FormDashboard());
+
+            // Check if form is not null
+            if (form != null)
+            {
+                loadForm(form);
+            }
+            else // Load default form
+            {
+                loadForm(new FormDashboard());
+            }
         }
 
         private void initNavButtons()

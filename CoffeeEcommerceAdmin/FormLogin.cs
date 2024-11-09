@@ -36,7 +36,7 @@ namespace CoffeeEcommerceAdmin
             this.Hide();
 
             // Show the main form
-            FormLayout formLayout = new FormLayout();
+            FormLayout formLayout = new FormLayout(null);
             formLayout.Show();
         }
     }
