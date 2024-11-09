@@ -30,6 +30,9 @@ namespace CoffeeEcommerceAdmin
             Properties.Settings.Default.user_id = userId;
             Properties.Settings.Default.user_name = userName;
 
+            // Save the properties
+            Properties.Settings.Default.Save();
+
             MessageBox.Show("Đăng nhập thành công vào");
 
             // Close the login form

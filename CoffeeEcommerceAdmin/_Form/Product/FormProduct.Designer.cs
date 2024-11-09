@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.button_topping_form = new System.Windows.Forms.Button();
+            this.button_size_form = new System.Windows.Forms.Button();
             this.button_category_form = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -41,8 +41,8 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.button_topping_form);
+            this.panel1.Controls.Add(this.button_size_form);
             this.panel1.Controls.Add(this.button_category_form);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
@@ -53,23 +53,23 @@
             this.panel1.Size = new System.Drawing.Size(1044, 95);
             this.panel1.TabIndex = 0;
             // 
-            // button6
+            // button_topping_form
             // 
-            this.button6.Location = new System.Drawing.Point(286, 29);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(131, 44);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "Quản lý topping";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button_topping_form.Location = new System.Drawing.Point(286, 29);
+            this.button_topping_form.Name = "button_topping_form";
+            this.button_topping_form.Size = new System.Drawing.Size(131, 44);
+            this.button_topping_form.TabIndex = 1;
+            this.button_topping_form.Text = "Quản lý topping";
+            this.button_topping_form.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // button_size_form
             // 
-            this.button5.Location = new System.Drawing.Point(149, 29);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(131, 44);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "Quản lý size";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button_size_form.Location = new System.Drawing.Point(149, 29);
+            this.button_size_form.Name = "button_size_form";
+            this.button_size_form.Size = new System.Drawing.Size(131, 44);
+            this.button_size_form.TabIndex = 2;
+            this.button_size_form.Text = "Quản lý size";
+            this.button_size_form.UseVisualStyleBackColor = true;
             // 
             // button_category_form
             // 
@@ -139,8 +139,8 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button_topping_form;
+        private System.Windows.Forms.Button button_size_form;
         private System.Windows.Forms.Button button_category_form;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
