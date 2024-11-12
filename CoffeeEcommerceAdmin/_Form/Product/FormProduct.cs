@@ -33,11 +33,45 @@ namespace CoffeeEcommerceAdmin._Form.Product
             this.button_size_form.Click += Button_size_form_Click;
             this.button_topping_form.Click += Button_topping_form_Click;
             this.button_create_product_form.Click += Button_create_product_form_Click;
+            this.button_update_form.Click += Button_update_form_Click;
+            this.button_delete_product.Click += Button_delete_product_Click;
 
             this.button_search.Click += Button_search_Click;
 
             RenderProductsGridView();
             RenderCategoryCombobox();
+        }
+
+        private async void Button_delete_product_Click(object sender, EventArgs e)
+        {
+            // Kiểm tra xem có chọn sản phẩm nào không
+            if (dataGridView_products.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn sản phẩm cần xóa");
+                return;
+            }
+
+            // Lấy product trong dataGridView
+            ProductModel selectedProduct = dataGridView_products.SelectedRows[0].DataBoundItem as ProductModel;
+
+            // Show thông báo xác nhận xóa
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn xóa sản phẩm này không?", "Xác nhận xóa", MessageBoxButtons.YesNo);
+
+            if (dialogResult == DialogResult.Yes)
+            {
+                bool result = await productRequest.DeleteProductAsync(selectedProduct.id);
+
+                if (result)
+                {
+                    MessageBox.Show("Xóa sản phẩm thành công");
+
+                    RenderProductsGridView();
+                }
+                else
+                {
+                    MessageBox.Show("Xóa sản phẩm thất bại");
+                }
+            }
         }
 
         private async void RenderProductsGridView()
@@ -122,6 +156,26 @@ namespace CoffeeEcommerceAdmin._Form.Product
         private void Button_search_Click(object sender, EventArgs e)
         {
             FilterProducts();
+        }
+
+        private void Button_update_form_Click(object sender, EventArgs e)
+        {
+            // Kiểm tra xem có chọn sản phẩm nào không
+            if (dataGridView_products.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn sản phẩm cần cập nhật");
+                return;
+            }
+
+            // Lấy product trong dataGridView
+            ProductModel selectedProduct = dataGridView_products.SelectedRows[0].DataBoundItem as ProductModel;
+
+            FormLayout parentFormLayout = this.ParentForm as FormLayout;
+
+            if (parentFormLayout != null)
+            {
+                parentFormLayout.loadForm(new FormUpdateProduct(selectedProduct));
+            }
         }
 
         private void Button_create_product_form_Click(object sender, EventArgs e)

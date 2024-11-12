@@ -72,7 +72,7 @@ namespace CoffeeEcommerceAdmin._Form.Product
                 string productName = textBox_name.Text;
                 int categoryId = comboBox_category.SelectedItem != null ? (comboBox_category.SelectedItem as CategoryModel).id : 0;
                 string statusName = comboBox_status.SelectedItem.ToString();
-                int status = statusName == "Đang bán" ? 0 : 1;
+                int status = statusName == "Đang bán" ? 1 : 0;
                 decimal price = Decimal.Parse(textBox_price.Text);
                 string description = textBox_description.Text;
 

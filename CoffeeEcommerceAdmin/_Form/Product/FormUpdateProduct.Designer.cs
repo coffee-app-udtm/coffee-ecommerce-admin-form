@@ -51,6 +51,7 @@
             this.textBox_size_price = new System.Windows.Forms.TextBox();
             this.textBox_name = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button_cancel_upload_image = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -269,11 +270,21 @@
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
             // 
+            // button_cancel_upload_image
+            // 
+            this.button_cancel_upload_image.Location = new System.Drawing.Point(12, 337);
+            this.button_cancel_upload_image.Name = "button_cancel_upload_image";
+            this.button_cancel_upload_image.Size = new System.Drawing.Size(170, 32);
+            this.button_cancel_upload_image.TabIndex = 53;
+            this.button_cancel_upload_image.Text = "Hủy tải hình ảnh";
+            this.button_cancel_upload_image.UseVisualStyleBackColor = true;
+            // 
             // FormUpdateProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1255, 634);
+            this.Controls.Add(this.button_cancel_upload_image);
             this.Controls.Add(this.button_upload_image);
             this.Controls.Add(this.button_submit);
             this.Controls.Add(this.listBox_product_sizes);
@@ -331,5 +342,6 @@
         private System.Windows.Forms.TextBox textBox_size_price;
         private System.Windows.Forms.TextBox textBox_name;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button_cancel_upload_image;
     }
 }

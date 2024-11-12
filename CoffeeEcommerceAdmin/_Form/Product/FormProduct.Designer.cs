@@ -32,20 +32,20 @@
             this.button_topping_form = new System.Windows.Forms.Button();
             this.button_size_form = new System.Windows.Forms.Button();
             this.button_category_form = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.button_delete_product = new System.Windows.Forms.Button();
+            this.button_update_form = new System.Windows.Forms.Button();
             this.button_create_product_form = new System.Windows.Forms.Button();
             this.panel_frame = new System.Windows.Forms.Panel();
+            this.dataGridView_products = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.button_search = new System.Windows.Forms.Button();
             this.comboBox_category = new System.Windows.Forms.ComboBox();
             this.textBox_search = new System.Windows.Forms.TextBox();
-            this.dataGridView_products = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel_frame.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_products)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -53,8 +53,8 @@
             this.panel1.Controls.Add(this.button_topping_form);
             this.panel1.Controls.Add(this.button_size_form);
             this.panel1.Controls.Add(this.button_category_form);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button_delete_product);
+            this.panel1.Controls.Add(this.button_update_form);
             this.panel1.Controls.Add(this.button_create_product_form);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -89,27 +89,29 @@
             this.button_category_form.Text = "Quản lý danh mục";
             this.button_category_form.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // button_delete_product
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.button_delete_product.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.Location = new System.Drawing.Point(923, 29);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(109, 44);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Xóa";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button_delete_product.BackColor = System.Drawing.Color.Red;
+            this.button_delete_product.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button_delete_product.Location = new System.Drawing.Point(923, 29);
+            this.button_delete_product.Name = "button_delete_product";
+            this.button_delete_product.Size = new System.Drawing.Size(109, 44);
+            this.button_delete_product.TabIndex = 4;
+            this.button_delete_product.Text = "Xóa";
+            this.button_delete_product.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // button_update_form
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.button_update_form.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(812, 29);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(105, 44);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Sửa";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button_update_form.Location = new System.Drawing.Point(812, 29);
+            this.button_update_form.Name = "button_update_form";
+            this.button_update_form.Size = new System.Drawing.Size(105, 44);
+            this.button_update_form.TabIndex = 5;
+            this.button_update_form.Text = "Sửa";
+            this.button_update_form.UseVisualStyleBackColor = true;
             // 
             // button_create_product_form
             // 
@@ -131,6 +133,18 @@
             this.panel_frame.Name = "panel_frame";
             this.panel_frame.Size = new System.Drawing.Size(1044, 507);
             this.panel_frame.TabIndex = 1;
+            // 
+            // dataGridView_products
+            // 
+            this.dataGridView_products.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView_products.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_products.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView_products.Location = new System.Drawing.Point(0, 100);
+            this.dataGridView_products.Name = "dataGridView_products";
+            this.dataGridView_products.RowHeadersWidth = 51;
+            this.dataGridView_products.RowTemplate.Height = 24;
+            this.dataGridView_products.Size = new System.Drawing.Size(1044, 407);
+            this.dataGridView_products.TabIndex = 3;
             // 
             // panel2
             // 
@@ -186,18 +200,6 @@
             this.textBox_search.Size = new System.Drawing.Size(198, 45);
             this.textBox_search.TabIndex = 4;
             // 
-            // dataGridView_products
-            // 
-            this.dataGridView_products.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView_products.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_products.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView_products.Location = new System.Drawing.Point(0, 100);
-            this.dataGridView_products.Name = "dataGridView_products";
-            this.dataGridView_products.RowHeadersWidth = 51;
-            this.dataGridView_products.RowTemplate.Height = 24;
-            this.dataGridView_products.Size = new System.Drawing.Size(1044, 407);
-            this.dataGridView_products.TabIndex = 3;
-            // 
             // FormProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -210,9 +212,9 @@
             this.Text = "FormProduct";
             this.panel1.ResumeLayout(false);
             this.panel_frame.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_products)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_products)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -223,8 +225,8 @@
         private System.Windows.Forms.Button button_topping_form;
         private System.Windows.Forms.Button button_size_form;
         private System.Windows.Forms.Button button_category_form;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button_delete_product;
+        private System.Windows.Forms.Button button_update_form;
         private System.Windows.Forms.Button button_create_product_form;
         private System.Windows.Forms.Panel panel_frame;
         private System.Windows.Forms.Panel panel2;
