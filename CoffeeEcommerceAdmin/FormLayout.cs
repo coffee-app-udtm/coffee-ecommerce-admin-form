@@ -1,5 +1,7 @@
 ﻿using CoffeeEcommerceAdmin._Form.Product;
 using CoffeeEcommerceAdmin._Form.User;
+using CoffeeEcommerceAdmin._Form.Revenue;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -41,6 +43,7 @@ namespace CoffeeEcommerceAdmin
             navButtons.Add(button_nav_dashboard);
             navButtons.Add(button_nav_product);
             navButtons.Add(button_nav_user);
+            navButtons.Add(button_nav_revenue);
 
             foreach (var btn in navButtons)
             {
@@ -81,6 +84,9 @@ namespace CoffeeEcommerceAdmin
                     break;
                 case "button_nav_user":
                     loadForm(new FormUser());
+                    break;
+                case "button_nav_revenue":
+                    loadForm(new FormRevenue());
                     break;
                 default:
                     break;
