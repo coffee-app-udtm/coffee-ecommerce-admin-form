@@ -31,9 +31,9 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_nav_user = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button_nav_order = new System.Windows.Forms.Button();
             this.button_nav_product = new System.Windows.Forms.Button();
             this.button_nav_dashboard = new System.Windows.Forms.Button();
             this.panel_main = new System.Windows.Forms.Panel();
@@ -60,9 +60,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.button_nav_user);
             this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button_nav_order);
             this.panel1.Controls.Add(this.button_nav_product);
             this.panel1.Controls.Add(this.button_nav_dashboard);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -87,19 +87,19 @@
             this.button4.Text = "Đăng xuất";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // button_nav_user
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.Image = global::CoffeeEcommerceAdmin.Properties.Resources.icons8_users_24;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(25, 301);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 60);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Khách hàng";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button_nav_user.FlatAppearance.BorderSize = 0;
+            this.button_nav_user.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_nav_user.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button_nav_user.Image = global::CoffeeEcommerceAdmin.Properties.Resources.icons8_users_24;
+            this.button_nav_user.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_nav_user.Location = new System.Drawing.Point(25, 301);
+            this.button_nav_user.Name = "button_nav_user";
+            this.button_nav_user.Size = new System.Drawing.Size(162, 60);
+            this.button_nav_user.TabIndex = 1;
+            this.button_nav_user.Text = "Khách hàng";
+            this.button_nav_user.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
@@ -115,19 +115,19 @@
             this.button5.Text = "Doanh thu";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // button_nav_order
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.Image = global::CoffeeEcommerceAdmin.Properties.Resources.icons8_shopping_basket_24;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(25, 169);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(162, 60);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Đơn hàng";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button_nav_order.FlatAppearance.BorderSize = 0;
+            this.button_nav_order.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_nav_order.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button_nav_order.Image = global::CoffeeEcommerceAdmin.Properties.Resources.icons8_shopping_basket_24;
+            this.button_nav_order.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_nav_order.Location = new System.Drawing.Point(25, 169);
+            this.button_nav_order.Name = "button_nav_order";
+            this.button_nav_order.Size = new System.Drawing.Size(162, 60);
+            this.button_nav_order.TabIndex = 1;
+            this.button_nav_order.Text = "Đơn hàng";
+            this.button_nav_order.UseVisualStyleBackColor = true;
             // 
             // button_nav_product
             // 
@@ -184,9 +184,9 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button_nav_user;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button_nav_order;
         private System.Windows.Forms.Button button_nav_product;
         private System.Windows.Forms.Button button_nav_dashboard;
         private System.Windows.Forms.Panel panel_main;

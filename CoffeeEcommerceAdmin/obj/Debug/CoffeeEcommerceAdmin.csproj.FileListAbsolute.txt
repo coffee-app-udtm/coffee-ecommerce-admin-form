@@ -40,3 +40,4 @@ C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceAdmin\CoffeeEcom
 C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceAdmin\CoffeeEcommerceAdmin\obj\Debug\CoffeeEcommerceAdmin._Form.Topping.FormTopping.resources
 C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceAdmin\CoffeeEcommerceAdmin\obj\Debug\CoffeeEcommerceAdmin._Form.Product.FormCreateProduct.resources
 C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceAdmin\CoffeeEcommerceAdmin\obj\Debug\CoffeeEcommerceAdmin._Form.Product.FormUpdateProduct.resources
+C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceAdmin\CoffeeEcommerceAdmin\obj\Debug\CoffeeEcommerceAdmin._Form.User.FormUser.resources

@@ -117,6 +117,12 @@
     <Compile Include="_Form\Topping\FormTopping.Designer.cs">
       <DependentUpon>FormTopping.cs</DependentUpon>
     </Compile>
+    <Compile Include="_Form\User\FormUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Form\User\FormUser.Designer.cs">
+      <DependentUpon>FormUser.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="_Form\Topping\FormTopping.resx">
       <DependentUpon>FormTopping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Form\User\FormUser.resx">
+      <DependentUpon>FormUser.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
