@@ -11,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CoffeeEcommerceAdmin._Form.Account;
 
 namespace CoffeeEcommerceAdmin
 {
@@ -44,6 +45,7 @@ namespace CoffeeEcommerceAdmin
             navButtons.Add(button_nav_product);
             navButtons.Add(button_nav_user);
             navButtons.Add(button_nav_revenue);
+            navButtons.Add(button_nav_account);
 
             foreach (var btn in navButtons)
             {
@@ -87,6 +89,9 @@ namespace CoffeeEcommerceAdmin
                     break;
                 case "button_nav_revenue":
                     loadForm(new FormRevenue());
+                    break;
+                case "button_nav_account":
+                    loadForm(new FormAccount());
                     break;
                 default:
                     break;

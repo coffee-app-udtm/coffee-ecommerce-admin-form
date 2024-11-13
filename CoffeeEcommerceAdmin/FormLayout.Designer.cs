@@ -30,13 +30,14 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel_main = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
+            this.button_nav_account = new System.Windows.Forms.Button();
             this.button_nav_user = new System.Windows.Forms.Button();
             this.button_nav_revenue = new System.Windows.Forms.Button();
             this.button_nav_order = new System.Windows.Forms.Button();
             this.button_nav_product = new System.Windows.Forms.Button();
             this.button_nav_dashboard = new System.Windows.Forms.Button();
-            this.panel_main = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +61,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button_nav_account);
             this.panel1.Controls.Add(this.button_nav_user);
             this.panel1.Controls.Add(this.button_nav_revenue);
             this.panel1.Controls.Add(this.button_nav_order);
@@ -70,6 +72,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(167, 570);
             this.panel1.TabIndex = 1;
+            // 
+            // panel_main
+            // 
+            this.panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_main.Location = new System.Drawing.Point(176, 3);
+            this.panel_main.Name = "panel_main";
+            this.panel_main.Size = new System.Drawing.Size(979, 570);
+            this.panel_main.TabIndex = 2;
             // 
             // button4
             // 
@@ -86,6 +96,20 @@
             this.button4.TabIndex = 1;
             this.button4.Text = "Đăng xuất";
             this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button_nav_account
+            // 
+            this.button_nav_account.FlatAppearance.BorderSize = 0;
+            this.button_nav_account.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_nav_account.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button_nav_account.Image = global::CoffeeEcommerceAdmin.Properties.Resources.icons8_key_24;
+            this.button_nav_account.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_nav_account.Location = new System.Drawing.Point(25, 367);
+            this.button_nav_account.Name = "button_nav_account";
+            this.button_nav_account.Size = new System.Drawing.Size(162, 60);
+            this.button_nav_account.TabIndex = 1;
+            this.button_nav_account.Text = "Tài khoản";
+            this.button_nav_account.UseVisualStyleBackColor = true;
             // 
             // button_nav_user
             // 
@@ -157,14 +181,6 @@
             this.button_nav_dashboard.Text = "Trang chủ";
             this.button_nav_dashboard.UseVisualStyleBackColor = true;
             // 
-            // panel_main
-            // 
-            this.panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_main.Location = new System.Drawing.Point(176, 3);
-            this.panel_main.Name = "panel_main";
-            this.panel_main.Size = new System.Drawing.Size(979, 570);
-            this.panel_main.TabIndex = 2;
-            // 
             // FormLayout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -190,6 +206,7 @@
         private System.Windows.Forms.Button button_nav_product;
         private System.Windows.Forms.Button button_nav_dashboard;
         private System.Windows.Forms.Panel panel_main;
+        private System.Windows.Forms.Button button_nav_account;
     }
 }
 

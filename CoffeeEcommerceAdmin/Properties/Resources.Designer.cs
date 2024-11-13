@@ -93,6 +93,16 @@ namespace CoffeeEcommerceAdmin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_key_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-key-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_logout_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-logout-24", resourceCulture);
