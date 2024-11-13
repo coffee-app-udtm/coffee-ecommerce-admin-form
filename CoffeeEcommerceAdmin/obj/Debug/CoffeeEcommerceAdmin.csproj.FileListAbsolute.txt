@@ -44,3 +44,4 @@ C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceAdmin\CoffeeEcom
 C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceAdmin\CoffeeEcommerceAdmin\bin\Debug\UCRevenue.pdb
 C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceAdmin\CoffeeEcommerceAdmin\obj\Debug\CoffeeEcommerceAdmin._Form.Revenue.FormRevenue.resources
 C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceAdmin\CoffeeEcommerceAdmin\bin\Debug\UCRevenue.dll
+C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceAdmin\CoffeeEcommerceAdmin\obj\Debug\CoffeeEcommerceAdmin._Form.Account.FormAccount.resources
