@@ -20,7 +20,18 @@ namespace CoffeeEcommerceAdmin
             }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLayout(null));
+
+            // Check if user is logged in
+            if (Properties.Settings.Default.user_id == "")
+            {
+                Application.Run(new FormLogin());
+            }
+            else
+            {
+                Application.Run(new FormLayout(null));
+            }
+
+            
         }
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern bool SetProcessDPIAware();

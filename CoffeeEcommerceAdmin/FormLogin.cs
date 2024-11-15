@@ -25,10 +25,12 @@ namespace CoffeeEcommerceAdmin
             // Handle the login data here
             string userId = e.id;
             string userName = e.user_name;
+            int roleId = e.role_id;
 
             // Set to properties
             Properties.Settings.Default.user_id = userId;
             Properties.Settings.Default.user_name = userName;
+            Properties.Settings.Default.role_id = roleId;
 
             // Save the properties
             Properties.Settings.Default.Save();

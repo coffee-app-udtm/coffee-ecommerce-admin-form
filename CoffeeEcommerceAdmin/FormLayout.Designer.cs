@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLayout));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel_main = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.button_logout = new System.Windows.Forms.Button();
+            this.button_current_user = new System.Windows.Forms.Button();
             this.button_nav_account = new System.Windows.Forms.Button();
             this.button_nav_user = new System.Windows.Forms.Button();
             this.button_nav_revenue = new System.Windows.Forms.Button();
@@ -60,7 +62,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button_logout);
+            this.panel1.Controls.Add(this.button_current_user);
             this.panel1.Controls.Add(this.button_nav_account);
             this.panel1.Controls.Add(this.button_nav_user);
             this.panel1.Controls.Add(this.button_nav_revenue);
@@ -81,21 +84,35 @@
             this.panel_main.Size = new System.Drawing.Size(979, 570);
             this.panel_main.TabIndex = 2;
             // 
-            // button4
+            // button_logout
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button4.ForeColor = System.Drawing.Color.LightCoral;
-            this.button4.Image = global::CoffeeEcommerceAdmin.Properties.Resources.icons8_logout_24;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(25, 488);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(162, 60);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Đăng xuất";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button_logout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button_logout.FlatAppearance.BorderSize = 0;
+            this.button_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button_logout.ForeColor = System.Drawing.Color.LightCoral;
+            this.button_logout.Image = global::CoffeeEcommerceAdmin.Properties.Resources.icons8_logout_24;
+            this.button_logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_logout.Location = new System.Drawing.Point(25, 488);
+            this.button_logout.Name = "button_logout";
+            this.button_logout.Size = new System.Drawing.Size(162, 60);
+            this.button_logout.TabIndex = 1;
+            this.button_logout.Text = "Đăng xuất";
+            this.button_logout.UseVisualStyleBackColor = true;
+            // 
+            // button_current_user
+            // 
+            this.button_current_user.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button_current_user.FlatAppearance.BorderSize = 0;
+            this.button_current_user.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_current_user.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button_current_user.Image = global::CoffeeEcommerceAdmin.Properties.Resources.icons8_test_account_24;
+            this.button_current_user.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_current_user.Location = new System.Drawing.Point(25, 433);
+            this.button_current_user.Name = "button_current_user";
+            this.button_current_user.Size = new System.Drawing.Size(162, 60);
+            this.button_current_user.TabIndex = 1;
+            this.button_current_user.UseVisualStyleBackColor = true;
             // 
             // button_nav_account
             // 
@@ -187,8 +204,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1158, 576);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormLayout";
-            this.Text = "Form1";
+            this.Text = "Ứng dụng";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -199,7 +217,7 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button_logout;
         private System.Windows.Forms.Button button_nav_user;
         private System.Windows.Forms.Button button_nav_revenue;
         private System.Windows.Forms.Button button_nav_order;
@@ -207,6 +225,7 @@
         private System.Windows.Forms.Button button_nav_dashboard;
         private System.Windows.Forms.Panel panel_main;
         private System.Windows.Forms.Button button_nav_account;
+        private System.Windows.Forms.Button button_current_user;
     }
 }
 
